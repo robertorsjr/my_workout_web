@@ -1,11 +1,14 @@
-import {Button} from "@/components/ChakraUiNext";
+'use client'
+
+
+import {Button, Text} from "@chakra-ui/react";
 
 export default function Home() {
 
   return (
     <>
-      <h1>hello world</h1>
-      <Button>click</Button>
+      <Text color='brand.800'>hello world</Text>
+      <Button bgColor='brand.900'>click</Button>
     </>
   )
 }
