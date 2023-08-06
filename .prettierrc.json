@@ -1,0 +1,19 @@
+{
+  "semi": false,
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "overrides": [
+    {
+      "files": ["*.spec.ts", "*.spec.tsx"],
+      "options": {
+        "printWidth": 140
+      }
+    },
+    {
+      "files": ["src/locales/*"],
+      "options": {
+        "printWidth": 1000
+      }
+    }
+  ]
+}
