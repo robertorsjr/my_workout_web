@@ -8,21 +8,22 @@ const themeConfig = {
 const themeOptions = {
   colors: {
     primary: {
-      500: '#fff1ff',
+      500: '#4b1955',
+      600: '#5d3066',
     },
-    brand: {
-      900: '#1a365d',
-      800: '#153e75',
-      700: '#2a69ac',
+    secondary: {
+      500: '#000000',
+      600: '#1a1a1a',
     },
   },
   styles: {
     global: {
       body: {
-        color: 'gray.600',
-        backgroundColor: 'primary.500',
+        h: '100vh',
+        color: 'gray.50',
+        bgGradient:
+          'linear-gradient(17deg, rgba(75,25,85,1) 0%, rgba(0,0,0,1) 44%)',
         maxWidth: '100vw',
-        overflowX: 'hidden',
       },
     },
     ...themeConfig,

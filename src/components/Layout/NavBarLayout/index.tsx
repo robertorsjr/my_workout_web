@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { Avatar, Flex } from '@chakra-ui/react'
+import { Avatar, Flex, Link } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
 const NavBarLayout = () => {
@@ -11,9 +11,15 @@ const NavBarLayout = () => {
       align="center"
       justifyContent="space-between"
       boxShadow="md"
+      position="sticky"
     >
       <HamburgerIcon boxSize={6} />
-      <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+      <Flex w="30%" justify="space-around" align="center">
+        <Link>Home</Link>
+        <Link>Management</Link>
+        <Link>About</Link>
+      </Flex>
+      <Avatar size="md" name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
     </Flex>
   )
 }

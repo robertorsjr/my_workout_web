@@ -1,11 +1,7 @@
 'use client'
 
-import { Flex } from '@chakra-ui/react'
+import Login from '@/app/(public)/login/page'
 
 export default function Home() {
-  return (
-    <Flex h="full" w="full" align="center" justify="center">
-      home
-    </Flex>
-  )
+  return <Login />
 }

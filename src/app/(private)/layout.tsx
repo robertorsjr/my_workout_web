@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import PublicLayout from '@/components/Layout/PublicLayout'
+import NavBarLayout from '../../components/Layout/NavBarLayout'
 
 export const metadata: Metadata = {
   title: 'Workout Web',
@@ -11,5 +11,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return <PublicLayout>{children}</PublicLayout>
+  return (
+    <>
+      <NavBarLayout />
+      {children}
+    </>
+  )
 }
